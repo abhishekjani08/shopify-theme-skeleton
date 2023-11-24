@@ -37,7 +37,7 @@
     {%- endif -%}
   "
 >
-    {{ section.settings.display_mode }}
+  {{ section.settings.display_mode }}
 </div>
 
 {% schema %}
@@ -53,30 +53,12 @@
       "id": "display_mode",
       "label": "Display mode",
       "options": [
-        {
-          "value": "block",
-          "label": "Block"
-        },
-        {
-          "value": "flex",
-          "label": "Flex"
-        },
-        {
-          "value": "grid",
-          "label": "Grid"
-        },
-        {
-          "value": "inline-block",
-          "label": "Inline Block"
-        },
-        {
-          "value": "inline",
-          "label": "Inline"
-        },
-        {
-          "value": "none",
-          "label": "None"
-        }
+        { "value": "block", "label": "Block" },
+        { "value": "flex", "label": "Flex" },
+        { "value": "grid", "label": "Grid" },
+        { "value": "inline-block", "label": "Inline Block" },
+        { "value": "inline", "label": "Inline" },
+        { "value": "none", "label": "None" }
       ],
       "default": "block"
     },
@@ -171,8 +153,7 @@
         { "value": "vw", "label": "vw (viewport width)" },
         { "value": "vh", "label": "vh (viewport height)" },
         { "value": "svw", "label": "SVW (Small Viewport Width)" },
-        { "value": "svh", "label": "SVH (Small Viewport Height)" },
-        { "value": "auto", "label": "Auto (only for margins)" }
+        { "value": "svh", "label": "SVH (Small Viewport Height)" }
       ],
       "default": "px"
     },
