@@ -76,16 +76,16 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    {% sections 'header-group' %}
+    {% if settings.initial_modal_enabled and template == 'index' %}
+      {% section 'dev__modal' %}
+    {% endif %}
 
     {% comment %}
       {% section 'dev__announcement-bar' %}
       {% section 'dev__header' %}
     {% endcomment %}
 
-    {% if settings.initial_modal_enabled and template == 'index' %}
-      {% section 'dev__modal' %}
-    {% endif %}
+    {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
